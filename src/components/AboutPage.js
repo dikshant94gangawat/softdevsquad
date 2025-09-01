@@ -220,23 +220,18 @@ const AboutPage = () => {
             {team.map((member, index) => (
               <div key={index} className="team-card">
                 <div className="team-avatar">
-                  {member.image ? (
+                  {member.image && (
                     <img 
                       src={member.image} 
                       alt={member.name}
                       className="avatar-image"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
                     />
-                  ) : null}
-                  <span 
-                    className="avatar-initials" 
-                    style={{display: member.image ? 'none' : 'flex'}}
-                  >
-                    {member.avatar}
-                  </span>
+                  )}
+                  {!member.image && (
+                    <span className="avatar-initials">
+                      {member.avatar}
+                    </span>
+                  )}
                 </div>
                 <div className="team-info">
                   <h3 className="team-name">{member.name}</h3>

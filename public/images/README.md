@@ -12,3 +12,4 @@
 - For Purva Sharma: Currently using initials "PS" (no image set)
 
 Note: Make sure the image filename matches exactly: `ashima-sarkar.jpg`
+

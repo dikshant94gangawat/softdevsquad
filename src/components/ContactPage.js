@@ -175,13 +175,15 @@ const ContactPage = () => {
     {
       name: 'Purva Sharma',
       role: 'Co-Founder & CEO',
-      avatar: 'DG',
+      avatar: 'PS',
+      image: '/images/purva.jpg',
       expertise: ['Business Strategy', 'Client Relations', 'Project Management']
     },
     {
       name: 'Ashima Sarkar',
       role: 'Co-Founder & CTO',
-      avatar: 'AD',
+      avatar: 'AS',
+      image: '/images/ashima.jpg',
       expertise: ['Software Architecture', 'Technical Innovation', 'Team Leadership']
     }
   ];
@@ -425,7 +427,16 @@ const ContactPage = () => {
                   {founders.map((founder, index) => (
                     <div key={index} className="founder-card">
                       <div className="founder-avatar">
-                        <span className="avatar-initials">{founder.avatar}</span>
+                        {founder.image && (
+                          <img 
+                            src={founder.image} 
+                            alt={founder.name}
+                            className="founder-image"
+                          />
+                        )}
+                        {!founder.image && (
+                          <span className="avatar-initials">{founder.avatar}</span>
+                        )}
                       </div>
                       <div className="founder-info">
                         <h4 className="founder-name">{founder.name}</h4>

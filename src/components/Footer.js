@@ -87,13 +87,31 @@ const Footer = () => {
                   <div className="founders-avatars">
                     <div className="founder-card">
                       <div className="founder-avatar">
-                        <span className="founder-initials">DG</span>
+                        <img 
+                          src="/images/purva.jpg" 
+                          alt="Purva Sharma"
+                          className="founder-image"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                        />
+                        <span className="founder-initials" style={{display: 'none'}}>PS</span>
                       </div>
                       <span className="founder-name">Purva Sharma</span>
                     </div>
                     <div className="founder-card">
                       <div className="founder-avatar">
-                        <span className="founder-initials">AD</span>
+                        <img 
+                          src="/images/ashima.jpg" 
+                          alt="Ashima Sarkar"
+                          className="founder-image"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                        />
+                        <span className="founder-initials" style={{display: 'none'}}>AS</span>
                       </div>
                       <span className="founder-name">Ashima Sarkar</span>
                     </div>

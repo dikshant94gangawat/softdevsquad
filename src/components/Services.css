@@ -888,6 +888,14 @@
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-lg);
+    justify-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .stat-item {
+    width: 100%;
+    max-width: 250px;
   }
   
   .benefits-grid {
@@ -927,6 +935,15 @@
   
   .stats-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .stat-item {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
   
   .stat-number {
