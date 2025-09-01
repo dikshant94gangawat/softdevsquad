@@ -89,13 +89,13 @@ const Footer = () => {
                       <div className="founder-avatar">
                         <span className="founder-initials">DG</span>
                       </div>
-                      <span className="founder-name">Dikshant Gangawat</span>
+                      <span className="founder-name">Purva Sharma</span>
                     </div>
                     <div className="founder-card">
                       <div className="founder-avatar">
                         <span className="founder-initials">AD</span>
                       </div>
-                      <span className="founder-name">Abhishek Dhang</span>
+                      <span className="founder-name">Ashima Sarkar</span>
                     </div>
                   </div>
                 </div>
@@ -190,7 +190,7 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <div className="footer-copyright">
               <p>&copy; {currentYear} SoftDevSquad. All rights reserved.</p>
-              <p>Founded by Dikshant Gangawat & Abhishek Dhang</p>
+              <p>Founded by Purva Sharma & Ashima Sarkar</p>
             </div>
             
             <div className="footer-bottom-links">

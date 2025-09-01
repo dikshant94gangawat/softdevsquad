@@ -78,7 +78,7 @@ const Contact = () => {
     {
       icon: <FaUsers />,
       title: 'Founders',
-      details: 'Dikshant Gangawat & Abhishek Dhang',
+      details: 'Purva Sharma & Ashima Sarkar',
       link: 'mailto:softdevsquad@gmail.com'
     },
     {

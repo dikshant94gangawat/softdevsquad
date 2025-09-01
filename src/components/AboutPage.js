@@ -78,16 +78,18 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: 'Dikshant Gangawat',
+      name: 'Purva Sharma',
       role: 'Co-Founder & CEO',
       description: 'Visionary leader with expertise in business strategy and client relations.',
-      avatar: 'DG'
+      avatar: 'PS',
+      image: '/images/purva.jpg'
     },
     {
-      name: 'Abhishek Dhang',
+      name: 'Ashima Sarkar',
       role: 'Co-Founder & CTO',
       description: 'Technical expert specializing in software architecture and innovation.',
-      avatar: 'AD'
+      avatar: 'AS',
+      image: '/images/ashima.jpg'
     }
   ];
 
@@ -218,7 +220,23 @@ const AboutPage = () => {
             {team.map((member, index) => (
               <div key={index} className="team-card">
                 <div className="team-avatar">
-                  <span className="avatar-initials">{member.avatar}</span>
+                  {member.image ? (
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="avatar-image"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  <span 
+                    className="avatar-initials" 
+                    style={{display: member.image ? 'none' : 'flex'}}
+                  >
+                    {member.avatar}
+                  </span>
                 </div>
                 <div className="team-info">
                   <h3 className="team-name">{member.name}</h3>

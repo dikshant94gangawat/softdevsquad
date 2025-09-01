@@ -173,13 +173,13 @@ const ContactPage = () => {
 
   const founders = [
     {
-      name: 'Dikshant Gangawat',
+      name: 'Purva Sharma',
       role: 'Co-Founder & CEO',
       avatar: 'DG',
       expertise: ['Business Strategy', 'Client Relations', 'Project Management']
     },
     {
-      name: 'Abhishek Dhang',
+      name: 'Ashima Sarkar',
       role: 'Co-Founder & CTO',
       avatar: 'AD',
       expertise: ['Software Architecture', 'Technical Innovation', 'Team Leadership']
